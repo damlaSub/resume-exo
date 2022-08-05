@@ -1,0 +1,588 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* FIN DU RESET (Il faut mettre le reset au debut de css) */
+
+
+header {
+background-color:/* #D0E8E8;*/ #FFFDE7;
+display: flex; /* bunun child element'larini  inline yerlestirebilmek icin buraya yazmak onemli flex'i!!!!*/
+}
+nav {
+
+padding: 30px 0;
+width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+margin: 0 20px;
+
+}
+nav a {
+font-size: 20px;
+color: #134650;
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+transition: 0.3s;
+
+}
+nav a:hover {
+color: #161718; 
+}
+
+main {
+
+    width: 1200px; /* si on met un % main peut bouger beaucoup quand on change l'ecran*/
+   margin: 0 auto; /* 0 en bas et en haut*/
+}
+ footer {
+    background: #E1BA51;
+    height: 150px;
+} 
+#logo {
+
+width: 30%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0.8;
+    padding: 10px; 
+ 
+}
+#img1 {
+   
+    width: 100%;
+    border-radius: 10px 10px;
+}
+#topRight {
+ display: flex;
+ flex-wrap: wrap;
+width: 63%;
+}
+#slogan { 
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+h1, h2, h3, h4, h5 {
+font-size: 30px;
+color: #134650; 
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-style: italic;
+}
+#icon {
+    width: 20%;
+   
+    display: flex;
+    flex-direction: column; /*ca change la direction de l'element
+    justify content devient align items et vice versa */
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box; /* elemanlari box'un icine sikistiriyor */
+    }
+    #icon i {
+    font-size: 25px;
+    color: rgb(39, 35, 35);
+    margin: 8px, 0;
+    padding-right: 10px;
+    }
+
+    #title, #myText {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+h2 {
+    font-size: 23px;
+    font-weight: 500;
+    
+
+ }
+#myText {
+    box-sizing: border-box;
+    padding: 10px;
+    color: #134650;
+font-family: 'Roboto', sans-serif;
+text-justify: inter-word;
+/* text-align: justify; */
+} 
+
+#sec1 {
+width: 100%;
+background:#F6DDCC;
+display: flex;
+align-items: center;
+justify-content:center;
+}
+#left-1 {
+    width: 30%;
+}
+#photo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.img2 {
+    height: 400px;
+    width: 100%;
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0.8;
+    padding: 10px; 
+    border-radius: 10px 10px;
+}
+#right-1 {
+    height: 500px;
+    width: 70%;
+}
+
+#photo {
+    height: 300px;    
+}
+#socialMedia {
+   text-align: center;
+   
+box-sizing: border-box;
+padding-top: 70px;
+margin: 0 15px;
+}
+#socialMedia i {
+    font-size: 35px;
+    color: rgb(39, 35, 35);
+    margin: 8px, 0;
+    padding-right: 10px;
+    }
+#title {
+    height: 100px;
+    width: 100%;
+   
+}
+#myText{
+    height: 300px;
+    width: 50%;
+   }
+/*BUTTON YAPTIM AMA HOCA <A> ILE YAPMAYI GOSTERDI LIEN EKLEMEK ICIN
+#button-1, #button-2 {
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 25px;    
+}
+button {
+background-color:#FBE9E7;
+border: 2px solid  #134650; 
+text-align: center;
+ font-size: 15px;
+  border-radius: 30px 30px;
+  color:#134650;
+font-family: 'Roboto', sans-serif;
+}
+button:hover {
+background-color:#FFCCBC;  
+}
+*/ 
+#button{
+padding: 35px 0;
+margin-left: 170px;
+width: 100px;
+text-align: center;
+}
+.buttonA a{
+color: #134650; 
+background: #FFF8E1;
+border-radius: 20px;
+padding: 8px 25px;
+text-decoration:none;
+box-shadow: 0px 0px 10px 5px rgba(119, 119, 119, 0.63);
+/* http://www.supportduweb.com/generateur-ombre-css3-box-shadow-code-webkit-moz-ombre-portee-flou-simple-generer-propriete-css3.html*/
+}
+.buttonA a:hover {
+box-shadow: 0px 0px 10px 3px rgba(119, 119,119, 0);
+transition: 0.3s;
+}
+/* #button a:last-child ya da #button a:nth-child(1), nth-child(2)*/
+.buttonB a{
+     
+background-color: #FFF8E1;
+color:#566573 ;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+box-shadow: 0px 0px 3px 2px rgba(119, 119, 119, 0.48);
+margin-left: 135px;
+
+}
+.buttonB a:hover{
+border-color:#566573;
+color: #FFF8E1;
+    background:#566573;
+    transition: 0.4s; 
+}
+
+/* SECTION FORMATION*/
+#sec-2 {
+    width: 100%;
+    background:  #FFF3E0;
+  background: url(./img/parrish-freeman-4fWKOfUASWw-unsplash.jpg);
+  background-repeat: no-repeat;
+ background-size: cover;
+  opacity: 0.8;
+  background-color: (0, 0, 0, 0.4);
+  
+    }
+ .titre-2 {
+    width: 100%;
+     height: 100px;
+     display: flex;
+align-items: center;
+justify-content: center;
+ }
+ h3 {font-weight: 400;
+    font-size: 20px;
+    
+
+ }
+ h4 {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 17px;
+ }
+ h5 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 15px;
+ }
+h3, h4, h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-2 {
+    height: 300px;
+    width: 33.3333%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #134650;
+font-family: 'Roboto', sans-serif;
+text-justify: inter-word;
+}
+.text-2 .bold{
+font-weight: bold;
+text-decoration: underline;
+color: #134650;
+}
+.text-2 a:hover{
+    color: #134650;
+font-weight: 900;
+}    
+.flex {
+    display: flex;
+    flex-wrap: wrap; /*sariyor sayfaya yerlestiriyor*/ 
+}
+
+/* SECTION REALISATION*/
+#sec-3 {
+    height: 800px;
+    width: 100%;
+
+    
+    }
+
+#sec-3 .titre-2 {
+background-color:  #fef5e7  ;
+}
+    figure {
+        width: 60%;
+        margin: 0 auto;
+        background-color:    #fef5e7;
+        border-radius: 5px;
+        overflow: hidden; /* resim genislerse de buyumemesi gerek!  */
+    }
+    figure img {
+    width: 100%;
+ display: block;
+ transition: 0.3s;
+ border: solid 2px #212f3d;
+   
+    }
+    figure:hover img{
+    transform: scale(1.1); /*overflow: hidden; kismina yardim ediyor */
+
+    }
+   
+    figcaption{
+    text-align: center;
+    padding: 10px;
+    background:   #85929e ;
+    color: #134650;
+    font-size: 17px;
+    z-index: 1;
+    position: relative;
+
+    
+    }
+    #example {
+        height: 350px;
+        width: 50%;
+    }
+    #example p{
+width: 60%;
+margin: 15px auto 0 auto;
+font-size: 10px;
+text-align: justify;
+font-family: 'Roboto' sans-serif;
+    }    
+    .example-1, .example-2, .example-3, .example-4 {
+    width: 50%;
+    background:   #fef5e7 ;
+    }
+ 
+   /* SECTION COMPETENCE*/
+   #sec-4 {
+    width: 100%;
+        height: 700px;
+        width: 100%;
+        background: #eafaf1;
+         
+        
+        }
+#sec4-div1 li{
+text-decoration: none;
+font-size: 15px;
+color: #134650;
+font-family: 'Roboto' sans-serif;
+margin-bottom: 16px;
+margin-left: 50px;
+
+}
+
+
+
+.fa-arrow-alt-circle-right  {
+    box-sizing: border-box; 
+    margin-left: 30px;
+}
+
+
+#sec4-div1, #sec4-div2 {
+width: 50%;
+height: 600px;
+flex-wrap: wrap;
+}
+
+
+
+#sec4-div2 {
+display: flex;
+box-sizing: border-box;
+align-items: center;
+justify-content: center;
+
+
+}
+#sec4-div2 img{
+    width: 95px;
+    height: 95px; 
+}
+
+
+ /* Footer    
+ 
+ #right-c h3 {
+height: 100px;
+padding-top: 0%;
+}
+#sec4-div
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ */  /*LA PAGE CONTACT */
+ #pageContact{
+    background:   #fbeee6 ;
+ }
+#formulaire {
+width: 40%;
+
+}
+#side {
+width: 60%;
+height: 150px;
+}
+
+
+
+form {
+width: 90%;
+margin: 0 auto;
+font-size: 17px;
+color: #134650;
+font-family: 'Roboto' sans-serif;
+;
+}
+
+label, input, textarea {
+width: 100%;
+margin-bottom: 8px;
+}
+input, textarea {
+height: 60px;
+border: 2px solid #134650;
+}
+input[type="submit"]{
+border: none;
+background: #e59866;
+cursor: pointer;
+
+}
+
+#side h4{
+padding-top: 12px;
+}
+
+#map iframe {
+width: 100%;
+height: 240px;
+}
+
+#coordonnes{
+margin-bottom: 15px;
+}
+
+/* FOOTER*/ 
+
+/* justify-content: footer {
+justify-content:center
+space-between; mesela...; */
+
+}
+footer div {
+width: 25%;
+height: 200px;
+}
+#foot1 {
+background: tomato;
+}
+#foot2 {
+    background: red;
+    }
+#foot3 {
+        background: blue;
+        }
+#foot4 {
+            background: lightskyblue;
+            }
+
+
+
+/* --------------RESPONSIVE -------------------*/
+@media (max-width: 780px){
+#logo, #topRight, #slogan, main, #titre,  #left-1, .example-1, .example-2, .example-3, .example-4, #pageContact h3, #formulaire, #coordonnes, #map{
+
+width: 100%;
+}
+#icon, .designer {
+display: none;
+}
+#logo {
+padding: 20px 0;
+}
+#logo img{
+    width: 60%;
+}
+#button a {
+    display: block;
+    width: 35%;
+    margin: 30px auto;
+    }
+
+.fa fa-laptop{
+display: inline;
+}
+
+figure p {
+width: 98%;
+}
+#titre{
+display: block;
+}
+.example-1, .example-2, .example-3, .example-4 {
+display: block;
+} 
+#pageContact h3, #formulaire, #side {
+    flex-wrap: wrap;
+    /* flex-direction da olur*/
+}
+ #side {
+    display: flex; /* flex parent'a konuyor*/
+    
+    } 
+    #coordonnes{
+    order: 2;
+    }
+    #map {
+        order: 1;
+    
+    
+    }
+}
